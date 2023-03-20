@@ -1,0 +1,13 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Group 2
+User-agent: *
+Allow: /
+
+Disallow: /src
+Disallow: /utils
+Disallow: CMAP
+Disallow: ./DS_Store
+Sitemap: https://notariusz-mizia-muc.pl/sitemap.xml

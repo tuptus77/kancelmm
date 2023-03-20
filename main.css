@@ -1,0 +1,162 @@
+:root {
+  --color-secondary: #525252;
+  --color-accent: #033787;
+  --color-grey: #ddd;
+}
+
+body {
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  margin: 2% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cinzel, serif;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-container--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 900;
+  margin: 10px auto;
+  color: var(--color-accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+i {
+  margin-left: 8px;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.notary-name {
+  font-size: 1.5em;
+  margin: 10px auto;
+  font-weight: 500;
+}
+
+.contact-container {
+  width: 100%;
+  margin: 12px auto;
+}
+
+.contact-container--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.12em;
+  margin: 8px auto;
+  text-align: center;
+}
+
+.contact-container--item__title {
+  font-size: 0.95em;
+  margin: 2px;
+  color: var(--color-secondary);
+}
+
+.address {
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 1.12em;
+  color: var(--color-accent);
+}
+
+.address p {
+    margin-left: 6px;
+}
+
+.phone-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto 8px;
+}
+
+.phone-block p {
+  margin: 0 8px;
+}
+
+.accounts--item {
+  margin: 0 auto 8px;
+  text-align: center;
+}
+
+.accounts--item .text-smaller {
+  font-size: 0.88em;
+}
+
+.accounts--item p {
+  margin: 0;
+}
+
+.accounts--item .copy-account {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.accounts--item .copy-account i {
+  color: var(--color-grey);
+}
+
+.accounts--item .copy-account:active,
+.accounts--item .copy-account:active i {
+  color: var(--color-accent);
+}
+
+.accounts--item .copy-account:visited,
+.accounts--item .copy-account:visited i {
+  color: var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+ body {
+    font-size: 20px;
+ }
+
+ .contact-container--item {
+     font-size: 0.95em;
+ }
+
+ .main-container {
+     padding: 20px;
+ }
+
+  .address {
+    flex-direction: column;
+  }
+
+  .phone-block {
+    flex-direction: column;
+  }
+}
